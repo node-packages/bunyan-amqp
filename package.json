@@ -1,0 +1,33 @@
+{
+  "name": "bunyan-amqp",
+  "version": "1.0.0",
+  "description": "Logstash stream via AMQP for the Bunyan logger",
+  "main": "lib/bunyan-amqp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ferronrsmith/bunyan-amqp.git"
+  },
+  "author": "Ferron Hanse <ferronrsmith@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "bunyan",
+    "amqp",
+    "rabbitmq"
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "CBuffer": "^1.1.1",
+    "amqp": "^0.2.4",
+    "lodash": "^4.0.0"
+  },
+  "peerDependencies": {
+    "bunyan": "1.x"
+  },
+  "devDependencies": {
+    "bunyan": "^1.5.1",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
