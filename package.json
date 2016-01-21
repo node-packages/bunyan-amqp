@@ -1,5 +1,5 @@
 {
-  "name": "bunyan-amqp",
+  "name": "bunyan-amqp-logger",
   "version": "1.0.0",
   "description": "AMQP stream for the Bunyan logger",
   "main": "lib/bunyan-amqp.js",

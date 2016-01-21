@@ -10,7 +10,12 @@ var amq_stream = bunyanamqp.createStream({
     login : 'admin',
     password : 'UbpdMksr0ons',
     exchange : {
-        routingKey : 'logs'
+        name : 'amq-bunyan',
+        routingKey : 'logs',
+        properties : {
+            durable : true,
+            autoDelete : false
+        }
     }
 }).on('connect', function () {
     console.log("Connected to amqp");
