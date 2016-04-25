@@ -7,14 +7,20 @@ var bunyan = require('bunyan'),
   bunyanamqp = require("../lib/bunyan-amqp");
 
 var amq_stream = bunyanamqp.createStream({
-  login: 'admin',
-  password: 'UbpdMksr0ons',
   exchange: {
     name: 'amq-bunyan',
     routingKey: 'logs',
     properties: {
       durable: true,
       autoDelete: false
+    }
+  },
+  queue : {
+    name : 'amq-bunyan',
+    properties : {
+      autoDelete: false,
+      durable: true,
+      exclusive: false
     }
   }
 }).on('connect', function () {
