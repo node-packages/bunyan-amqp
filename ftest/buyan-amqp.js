@@ -14,15 +14,15 @@ var amq_stream = bunyanamqp.createStream({
       durable: true,
       autoDelete: false
     }
-  },
-  queue : {
-    name : 'amq-bunyan',
-    properties : {
-      autoDelete: false,
-      durable: true,
-      exclusive: false
-    }
   }
+  // queue : {
+  //   name : 'amq-bunyan',
+  //   properties : {
+  //     autoDelete: false,
+  //     durable: true,
+  //     exclusive: false
+  //   }
+  // }
 }).on('connect', function () {
   console.log("Connected to amqp");
 }).on('close', function (e) {
