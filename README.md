@@ -1,6 +1,6 @@
 # AMQP stream for Bunyan
 
-[![Build Status](https://travis-ci.org/ferronrsmith/bunyan-amqp.svg)](https://travis-ci.org/ferronrsmith/bunyan-amqp)
+[![Build Status](https://travis-ci.org/node-packages/bunyan-amqp.svg)](https://travis-ci.org/node-packages/bunyan-amqp)
 
 
 AMQP stream for the Bunyan logger
