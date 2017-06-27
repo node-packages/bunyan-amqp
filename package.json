@@ -1,6 +1,6 @@
 {
   "name": "bunyan-amqp-logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "AMQP stream for the Bunyan logger",
   "main": "lib/bunyan-amqp.js",
   "repository": {
@@ -18,16 +18,13 @@
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "dependencies": {
-    "CBuffer": "^1.1.1",
-    "amqp": "^0.2.4",
-    "lodash": "^4.0.0"
-  },
-  "peerDependencies": {
-    "bunyan": "1.x"
+    "bunyan": "^1.8.10",
+    "CBuffer": "^2.0.0",
+    "amqp": "^0.2.6",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "bunyan": "^1.5.1",
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
