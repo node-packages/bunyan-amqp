@@ -7,7 +7,7 @@ AMQP stream for the Bunyan logger
 
 # Installation
 
-    $ npm install bunyan-amqp
+    $ npm install bunyan-amqp-logger
 
 
 ## Usage
@@ -16,6 +16,7 @@ AMQP stream for the Bunyan logger
 "use strict";
 
 var bunyan = require('bunyan');
+var bunyanamqp = require('bunyan-amqp-logger');
 
 var amq_stream = bunyanamqp.createStream({
     login : 'admin',
