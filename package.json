@@ -1,6 +1,6 @@
 {
   "name": "bunyan-amqp-logger",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "AMQP stream for the Bunyan logger",
   "main": "lib/bunyan-amqp.js",
   "repository": {
